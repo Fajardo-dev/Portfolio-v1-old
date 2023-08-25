@@ -1,3 +1,5 @@
+// CURSOR STYLE FUNCTIONS
+
 function isTouchDevide(){
     return (('ontouchstart' in window) ||
     (navigator.maxTouchPoints > 0) ||

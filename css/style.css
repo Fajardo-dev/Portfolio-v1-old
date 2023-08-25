@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +9,20 @@
   color: #fff;
 }
 
+html, body {
+  scroll-behavior: smooth !important;
+}
+
 :hover {
   transition: 0.3s all ease;
+}
+
+.btn-down {
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* PARTICLE BACKGROUND */
@@ -171,7 +184,7 @@ nav, ul {
 /* ABOUT */
 .about {
   width: 85vw;
-  height: 100vh;
+  height: auto;
   margin: auto;
 }
 
@@ -201,6 +214,7 @@ nav, ul {
 
 .skills-about {
   width: 60%;
+  margin-bottom: 5em;
 }
 
 .skills-about-title {
@@ -259,7 +273,7 @@ nav, ul {
 
 /* PROJECTS */
 .projects {
-  width: 85%;
+  width: min-content;
   height: 100vh;
   margin: auto;
 }
@@ -274,7 +288,7 @@ nav, ul {
 .projects-cont {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 100px;
+  gap: 2em;
 }
 
 .projects-card {
@@ -282,7 +296,7 @@ nav, ul {
   flex-direction: column;
   border-radius: 30px;
   border: 3px solid #fff;
-  height: 320px;
+  height: auto;
 }
 
 .projects-card img {
@@ -297,6 +311,7 @@ nav, ul {
   max-height: max-content;
   flex-grow: 1;
   width: 100%;
+  margin: 2em auto;
 }
 
 .btn-code {
@@ -324,6 +339,47 @@ nav, ul {
 .btn-demo:hover {
   background-color: #00b894;
   color: #000;
+}
+
+@media (max-width: 768px) {
+  nav,
+  ul {
+    position: absolute;
+  }
+  .home,
+  .about,
+  .projects {
+    width: 80vw; /* Ancho completo en pantallas pequeñas */
+  }
+  .about {
+    height: 140vh;
+  }
+  .img-home {
+    width: 0;
+  }
+  .txt-home,
+  .img-home,
+  .txt-about {
+    width: 100%; /* Ancho completo para textos e imágenes en pantallas pequeñas */
+    font-size: 1.5rem;
+  }
+  .txt-home { /* Reducción del tamaño de fuente en pantallas pequeñas */ }
+  .btn-cv,
+  .btn-about,
+  .btn-see-projects,
+  .btn-code,
+  .btn-demo {
+    width: 100%; /* Ancho completo para botones en pantallas pequeñas */
+    margin: 10px 0; /* Espaciado vertical en botones */
+    padding: 0em 2em;
+  }
+  .skills-cont {
+    grid-template-columns: 1fr 1fr;
+  }
+  .projects-cont {
+    grid-template-columns: 1fr; /* Cambio a una sola columna en proyectos en pantallas pequeñas */
+    gap: 4em; /* Reducción del espacio entre proyectos en pantallas pequeñas */
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
