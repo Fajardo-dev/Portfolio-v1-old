@@ -13,6 +13,27 @@ html, body{
     scroll-behavior: smooth!important;
 }
 
+// ScrollBar
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #070707;
+    border-radius: 3em;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 30px;
+    height: 1em;
+}
+
+#body{
+    position: relative;
+    overflow: hidden;
+}
+
 // Transitions all
 :hover{
     transition: 0.3s all ease;

@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "John Fajardo Official Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "Portfolio",
+    "John",
+    "Fajardo"
+  ],
+  "author": "John Fajardo",
+  "license": "ISC",
+  "dependencies": {
+    "perfect-scrollbar": "^1.5.5"
+  }
+}
