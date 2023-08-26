@@ -308,7 +308,6 @@ nav, ul {
 .projects-cont {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2em;
 }
 
 .projects-card {
