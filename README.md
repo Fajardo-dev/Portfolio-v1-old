@@ -7,6 +7,7 @@ Welcome to my portfolio repository! Here you will find a careful selection of my
 🔗 Links Take a look at my most outstanding projects directly from my portfolio:
 
 🌐 Portfolio: https://fajardo-dev.netlify.app/
+
 📧 Contact: Interested in collaborating or learning more? Do not hesitate to contact me at my email Johnfajardo177@gmail.com!
 
 📌 Explore, Get Inspired, Connect This repository is a reflection of my professional and creative journey. If you're looking for ideas, inspiration, or just want to connect, I'd be happy to talk to you!
