@@ -323,11 +323,16 @@ nav, ul{
     border-radius: 30px;
     border: 3px solid #fff;
     height: auto;
+    text-align: center;
+}
+
+.projects-card h2{
+    margin-top: .5em;
 }
 
 .projects-card img{
     width: 100%;
-    border-radius: 20px;
+    border-radius: 27px;
 }
 
 .btns-projects{
