@@ -133,7 +133,11 @@ nav, ul {
 
 .txt-home, .img-home {
   width: 50%;
-  height: 35%;
+}
+
+.img-home img {
+  width: 90%;
+  float: right;
 }
 
 .txt-home {
@@ -204,14 +208,16 @@ nav, ul {
 /* ABOUT */
 .about {
   width: 85vw;
-  height: auto;
+  height: 95vh;
   margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .txt-about {
   font-weight: bold; /*bold*/
   font-size: 2.5rem;
-  width: 60%;
+  width: 75%;
   padding: 8rem 0;
 }
 
@@ -291,6 +297,14 @@ nav, ul {
   border: 3px solid #0984E3;
 }
 
+.cont-about-side {
+  padding: 10rem 0;
+}
+
+.cont-about-side img {
+  width: 100%;
+}
+
 /* PROJECTS */
 .projects {
   width: min-content;
@@ -302,12 +316,13 @@ nav, ul {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  padding: 5rem 0;
+  padding: 6rem 0 4rem 0;
 }
 
 .projects-cont {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 5em;
 }
 
 .projects-card {
@@ -317,6 +332,7 @@ nav, ul {
   border: 3px solid #fff;
   height: auto;
   text-align: center;
+  background-color: #070707;
 }
 
 .projects-card h2 {
@@ -326,21 +342,23 @@ nav, ul {
 .projects-card img {
   width: 100%;
   border-radius: 27px;
+  height: 13em;
 }
 
 .btns-projects {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: space-evenly;
   max-height: max-content;
   flex-grow: 1;
-  width: 100%;
-  margin: 2em auto;
+  margin: 1.5em 1em;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .btn-code {
   display: flex;
-  width: 200px;
+  width: 170px;
   height: 40px;
   border: 3px solid #fff;
   border-radius: 20px;
@@ -348,11 +366,11 @@ nav, ul {
   font-size: 17px;
   align-items: center;
   justify-content: space-between;
-  padding: 0 60px;
+  padding: 0 40px;
 }
 
 .btn-demo {
-  width: 200px;
+  width: 170px;
   height: 40px;
   border: 3px solid #00b894;
   border-radius: 20px;
@@ -362,7 +380,16 @@ nav, ul {
 
 .btn-demo:hover {
   background-color: #00b894;
+  color: #fff;
+}
+
+.btn-code:hover {
+  background-color: #fff;
   color: #000;
+}
+
+.giticon {
+  color: inherit;
 }
 
 @media (max-width: 768px) {
@@ -380,6 +407,10 @@ nav, ul {
   }
   .img-home {
     width: 0;
+  }
+  .img-home img {
+    width: 0px;
+    height: 0px;
   }
   .txt-home,
   .img-home,
@@ -403,6 +434,10 @@ nav, ul {
   .projects-cont {
     grid-template-columns: 1fr; /* Cambio a una sola columna en proyectos en pantallas pequeñas */
     gap: 4em; /* Reducción del espacio entre proyectos en pantallas pequeñas */
+  }
+  .cont-about-side {
+    width: 0px;
+    height: 0px;
   }
 }
 
