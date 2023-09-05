@@ -35,8 +35,8 @@ html, body{
 }
 
 // Transitions all
-:hover{
-    transition: 0.3s all ease;
+:hover ~ .c-cursor{
+    transition: 0.1s all ease;
 }
 
 .btn-down{
@@ -72,6 +72,7 @@ html, body{
     transition: none;
     z-index: 11000;
     will-change: transform;
+    
 &__inner{
         display: block;
         width: 100%;
@@ -81,7 +82,7 @@ html, body{
         border: 1px solid #070707;
         transition: all 0.15s ease-in-out;
         opacity: 1;
-        transform: scale(1) translateZ(0);
+        transform: scale(1.1) translateZ(0);
     }
     &.is-clicked &__inner{
         opacity: 0.5;
@@ -90,9 +91,9 @@ html, body{
         opacity: 0;
     }
     &.is-link-hovered &__inner{
-        transform: scale(0.85) translateZ(0);
+        transform: scale(.85) translateZ(0);
         background-color: #00b894;
-        border: 1px solid transparent;
+        border: 1px solid #000;
     }
 }
 
@@ -273,7 +274,7 @@ nav, ul{
     display:flex ;
     width: 145px;
     height: 45px;
-    border-radius: 30px;
+    border-radius: 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
