@@ -208,7 +208,6 @@ nav, ul {
 /* ABOUT */
 .about {
   width: 85vw;
-  height: 95vh;
   margin: auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
