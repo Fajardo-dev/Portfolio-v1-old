@@ -1,4 +1,5 @@
-🎨 Official Portfolio 🚀
+🎨 Official Portfolio V1🚀
+![picture3](https://github.com/Fajardo-dev/Portfolio/assets/62899394/7d36c181-6748-47e0-9081-3639416d0498)
 
 Welcome to my portfolio repository! Here you will find a careful selection of my projects and works, which show my experience and skills in Web Development and Programming. From innovative applications to creative designs, this portfolio covers my journey and progress over time.
 
