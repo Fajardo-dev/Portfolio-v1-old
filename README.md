@@ -1,4 +1,4 @@
-# Portfolio (old)
+# Old Portfolio
 
 ![image](https://github.com/Fajardo-dev/Portfolio/assets/62899394/62b9d143-d654-4b3a-92b2-17b4e4e8b44d)
 
